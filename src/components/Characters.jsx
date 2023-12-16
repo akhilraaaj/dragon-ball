@@ -48,7 +48,7 @@ const Characters = () => {
   );
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col overflow-x-hidden">
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <div className="flex-grow overflow-y-auto pt-14">
         <CharacterList characters={allCharacters} searchTerm={searchTerm} />

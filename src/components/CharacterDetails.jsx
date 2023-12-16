@@ -101,12 +101,12 @@ const CharacterDetails = () => {
     {transformations.length > 0 ? (
       transformations.map(transformation => (
         <div key={transformation.id} className="flex flex-col items-center px-10 py-16 shadow-lg border border-black rounded-2xl shadow-gray-400 bg-[#FF9525] transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer" style={{ width: '350px', height: '380px' }}
-        onClick={()=>document.getElementById('my_modal_2').showModal()}
+        onClick={()=>document.getElementById('my_modal_3').showModal()}
         >
           <img src={transformation.image} alt={transformation.name} className="object-cover mb-4" style={{ maxWidth: '95%', maxHeight: '95%' }} />
           <div className="text-center mb-2">
             <h3 className="font-bold text-red-500 text-lg">{transformation.name}</h3>
-            <dialog id="my_modal_2" className="modal">
+            <dialog id="my_modal_3" className="modal">
             <div className="modal-box bg-[#FF9525] flex flex-col items-center justify-center overflow-hidden" style={{ width: '450px', height: '480px' }}>
               <img src={transformation.image} alt={transformation.name} className="object-cover mb-4" style={{ maxWidth: '90%', maxHeight: '90%' }} />  
               <h3 className="font-bold text-red-500 text-lg">{transformation.name}</h3>

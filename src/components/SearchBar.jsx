@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/prop-types */
 import DragonBallImg from '../assets/dragonimg.png';
 import SearchImg from '../assets/searchImg.svg';
@@ -29,8 +30,9 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
           </div>
         </form>
         <div className='flex items-center gap-1'>
-          {/* <a href='' */}
+          <a href='https://github.com/akhilraaaj/dragon-ball' target='_blank'>
           <img src={GitHubImg} width={40} height={40} alt='' />
+          </a>
         </div>
       </div>
     </div>
