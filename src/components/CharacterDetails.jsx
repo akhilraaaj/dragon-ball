@@ -74,6 +74,8 @@ const CharacterDetails = () => {
     <dialog id="my_modal_2" className="modal">
     <div className="modal-box bg-[#FF9525] flex flex-col items-center justify-center overflow-hidden" style={{ width: '450px', height: '480px' }}>
     <img src={character.image} alt={character.name} className="object-cover mb-4" style={{ maxWidth: '90%', maxHeight: '90%' }} /> 
+    <h3 className="font-bold text-red-500 text-lg">{character.name}</h3>
+    <h3 className="font-bold text-red-500 text-lg">KI: {character.ki}</h3>
     </div>
     <form method="dialog" className="modal-backdrop">
       <button>close</button>
@@ -100,7 +102,7 @@ const CharacterDetails = () => {
   <div className='flex flex-wrap justify-center gap-4 mt-4 ml-1'>
     {transformations.length > 0 ? (
       transformations.map(transformation => (
-        <div key={transformation.id} className="flex flex-col items-center px-10 py-16 shadow-lg border border-black rounded-2xl shadow-gray-400 bg-[#FF9525] transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer" style={{ width: '350px', height: '380px' }}
+        <div key={transformation.id} className="flex flex-col items-center px-10 py-16 shadow-lg border border-black rounded-2xl shadow-[rgb(238,46,43)] bg-[#FF9525] transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer" style={{ width: '350px', height: '380px' }}
         onClick={()=>document.getElementById('my_modal_3').showModal()}
         >
           <img src={transformation.image} alt={transformation.name} className="object-cover mb-4" style={{ maxWidth: '95%', maxHeight: '95%' }} />
