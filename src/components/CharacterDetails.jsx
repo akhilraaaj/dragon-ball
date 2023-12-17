@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import  { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import DragonBallImg from '../assets/dragonimg.png';
@@ -50,8 +51,9 @@ const CharacterDetails = () => {
 
   if (!character) {
     return (
-      <div className="h-screen flex items-center justify-center bg-[#14225D]">
+      <div className="h-screen flex flex-col items-center justify-center bg-[#14225D]">
         <img src={DragonBallImg} alt="Dragon Ball Image" width={400} height={400} className="p-4" />
+        <h1 className='font-extrabold text-base sm:text-xl text-[#FF9525]'>Uh Oh! Can't find any specific details for this character.</h1>
       </div>
     );
   }
@@ -120,7 +122,7 @@ const CharacterDetails = () => {
       </div>
     ))) : (
         <div className={`${transformations.length === 0 ? 'flex flex-col items-center w-full' : 'hidden'}`}>
-          <p className="whitespace-nowrap text-center font-bold text-sm sm:text-lg text-[#FBECB2]">
+          <p className="whitespace-nowrap text-center font-bold text-xs sm:text-lg text-[#FBECB2]">
           Uh Oh! {character.name} does not possess any transformation abilities !!
           </p>
         </div>
