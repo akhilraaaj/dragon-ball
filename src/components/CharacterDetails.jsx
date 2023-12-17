@@ -53,7 +53,7 @@ const CharacterDetails = () => {
     return (
       <div className="h-screen flex flex-col items-center justify-center bg-[#14225D]">
         <img src={DragonBallImg} alt="Dragon Ball Image" width={400} height={400} className="p-4" />
-        <h1 className='font-extrabold text-base sm:text-xl text-[#FF9525]'>Uh Oh! Can't find any specific details for this character.</h1>
+        <h1 className='font-extrabold text-center text-base sm:text-xl text-[#FF9525]'>Uh Oh! Can't find any specific details for this character.</h1>
       </div>
     );
   }
