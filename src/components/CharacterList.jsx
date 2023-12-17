@@ -16,7 +16,7 @@ const CharacterList = ({ characters, searchTerm }) => {
     return (
       <div className="h-screen flex items-center justify-center bg-[#14225D]">
       <div className="flex-col">
-      <img src={DragonBallImg} alt="Dragon Ball Image" width={220} height={210} className="p-4" />
+      <img src={DragonBallImg} alt="Dragon Ball Image" width={400} height={400} className="p-4" />
         <p className="text-center font-semibold text-xl text-[#FF9525]">No characters found!!</p>
         <p className="text-center font-bold text-lg text-[#FF9525] mt-2">Please try again :)</p>
       </div>
@@ -35,8 +35,8 @@ const CharacterList = ({ characters, searchTerm }) => {
           >
             <img src={character.image} alt={character.name} className="w-58 h-56 object-contain" />
             <div className="text-center mt-4">
-              <h3 className="font-extrabold text-xl text-red-500">{character.name}</h3>
-              <h3 className="font-bold text-lg text-red-500">{character.race} - {character.gender}</h3>
+              <h3 className="font-extrabold text-xl text-[#243763]">{character.name}</h3>
+              <h3 className="font-bold text-lg text-[#FCF9BE]">{character.race} - {character.gender}</h3>
               {/* <h3 className="font-bold text-red-500 hidden sm:block">Base KI: {character.ki}</h3> */}
               {/* <h3 className="font-bold text-red-500 hidden sm:block">Max KI: {character.maxKi}</h3> */}
               {/* <h3 className="font-bold text-red-500">{character.affiliation}</h3> */}

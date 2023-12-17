@@ -43,7 +43,7 @@ const Characters = () => {
 
   if (loading) return ( 
     <div className="h-screen flex items-center justify-center bg-[#14225D]">
-      <img src={DragonBallImg} alt="Dragon Ball Image" width={180} height={180} className="p-4" />
+      <img src={DragonBallImg} alt="Dragon Ball Image" width={400} height={400} className="p-4" />
     </div>
   );
 
