@@ -2,6 +2,7 @@
 import  { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import DragonBallImg from '../assets/dragonimg.png';
+import Footer from './Footer';
 
 
 const CharacterDetails = () => {
@@ -104,7 +105,7 @@ const CharacterDetails = () => {
   <div className='flex flex-wrap justify-center gap-4 mt-4 ml-1'>
     {transformations.length > 0 ? (
       transformations.map(transformation => (
-        <div key={transformation.id} className="flex flex-col items-center px-10 py-16 shadow-lg border border-black rounded-2xl shadow-[rgb(238,46,43)] bg-[#FF9525] transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer" style={{ width: '350px', height: '380px' }} onClick={() => document.getElementById(`my_modal_${transformation.id}`).showModal()}>
+        <div key={transformation.id} className="flex flex-col items-center px-10 py-16 shadow-lg border border-black rounded-2xl shadow-[rgb(238,46,43)] bg-[#FF9525] transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer mt-6" style={{ width: '350px', height: '380px' }} onClick={() => document.getElementById(`my_modal_${transformation.id}`).showModal()}>
           <img src={transformation.image} alt={transformation.name} className="object-cover mb-4" style={{ maxWidth: '95%', maxHeight: '95%' }} />
           <div className="text-center mb-2">
             <h3 className="font-extrabold text-[#243763] text-lg">{transformation.name}</h3>
@@ -122,12 +123,15 @@ const CharacterDetails = () => {
       </div>
     ))) : (
         <div className={`${transformations.length === 0 ? 'flex flex-col items-center w-full' : 'hidden'}`}>
-          <p className="whitespace-nowrap text-center font-bold text-xs sm:text-lg text-[#FBECB2]">
+          <p className="whitespace-nowrap text-center font-bold text-xs sm:text-lg text-[#FBECB2] mt-6">
           Uh Oh! {character.name} does not possess any transformation abilities !!
           </p>
         </div>
     )}
   </div>
+  </div>
+  <div className='mt-24'>
+  <Footer  />
   </div>
   </div>
 );

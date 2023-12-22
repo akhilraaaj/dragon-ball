@@ -13,7 +13,7 @@ const Footer = () => {
         <a href='/'><img src={DragonBallImg} alt="Dragon Ball Image" width={200} height={180} className="px-10 py-4" /></a> 
       </div>
       <hr className="border-t border-gray-300 border-dotted w-120 items-center" />
-      <span className="flex items-center justify-center font-bold text-[#FFE4D6]  p-4 text-xl"><a href="https://github.com/akhilraaaj" target="_blank"><img src={DragonBallImg1} width={150} height={150} /></a></span>
+      <span className="flex items-center justify-center font-bold text-[#FFE4D6]  p-4 text-xl mt-2"><a href="https://github.com/akhilraaaj" target="_blank"><img src={DragonBallImg1} width={150} height={150} /></a></span>
     </div>
   );
 };

@@ -10,14 +10,14 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
   };
 
   return (
-    <div className='fixed top-0 w-full z-30 bg-[rgb(238,46,43)] shadow-md'>
+    <div className='fixed top-0 w-full z-30 bg-[rgb(238,46,43)] shadow-xl'>
       <div className='flex items-center justify-between px-4 md:px-10'>
         <div className='flex items-center gap-1'>
           <a href="/">
             <img src={DragonBallImg} alt="Dragon Ball Image" width={180} height={180} className="p-3" />
           </a>
         </div>
-        <form onSubmit={handleSearch} className="ml-auto mr-4 flex relative"> {/* Use ml-auto to push to the right */}
+        <form onSubmit={handleSearch} className="ml-auto mr-4 flex relative"> 
           <div className="relative">
             <input
               type="text"
